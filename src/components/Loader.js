@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/loader.css';
+import '../assets/loader.less';
 
 const Loader = () => (
   <div className="loading-container">

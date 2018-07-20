@@ -29,7 +29,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.css$/,
+        test: /\.(le|c)ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -39,7 +39,8 @@ module.exports = {
               publicPath: 'dist'
             }
           },
-          "css-loader"
+          "css-loader",
+          "less-loader"
         ]
       }
     ]
