@@ -88,7 +88,7 @@ class App extends Component {
         </header>
 
         <BibleContent
-          className="results"
+          className="results content-in"
           dataResult={dataResult}
           loading={loading}
         />

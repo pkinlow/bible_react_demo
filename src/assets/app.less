@@ -47,3 +47,47 @@ header {
   padding: 10px;
   text-align: left;
 }
+
+.content-in {
+  animation: fadeIn 800ms ease-in-out forwards;
+
+  h2 {
+    animation: slideInLeft 800ms ease-in forwards;
+  }
+
+  .verses {
+    animation: slideInRight 800ms ease-in forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
